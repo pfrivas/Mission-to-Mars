@@ -44,7 +44,31 @@ hemisphere_image_urls.append(hemispheres)
 ## Deliverable 2: Update the Web App with Mars’s Hemisphere Images and Titles
 
 ### The scraping.py file contains code that retrieves the full-resolution image URL and title for each hemisphere image
-- The code can be found in the [scraping.py](https://github.com/pfrivas/Mission-to-Mars/blob/main/scraping.py) file
+- The full code can be found in the [scraping.py](https://github.com/pfrivas/Mission-to-Mars/blob/main/scraping.py) file
+```
+# Deliverable 2 Scrape Hemisphere Data
+
+def mars_hemispheres(browser):
+
+    # Visit url
+    url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
+    browser.visit(url)
+
+    # collect four hemisphere images and titles
+    hemisphere_image_urls = []
+    for hemispheres in range(4):
+        browser.links.find_by_partial_text('Hemisphere')[hemispheres].click()
+        html = browser.html
+        hemispheres_soup = soup(html, 'html.parser')
+        title = hemispheres_soup.find('h2', class_='title').text
+        img_url = hemispheres_soup.find('li').a.get('href')
+        hemispheres = {}
+        hemispheres['img_url'] = f'https://marshemispheres.com/{img_url}'
+        hemispheres['title'] = title
+        hemisphere_image_urls.append(hemispheres)
+        browser.back()
+    return hemisphere_image_urls
+```
 
 ### The Mongo database is updated to contain the full-resolution image URL and title for each hemisphere image
 - ![mongo_img](https://github.com/pfrivas/Mission-to-Mars/blob/main/Resources/MongoDB%20Code%20(Hemisphere%20Images).png)
