@@ -54,5 +54,9 @@ hemisphere_image_urls.append(hemispheres)
 - 1. Styled the Web Scrape Button
 - 2. Added the hemisphere images as thumbnails
    - Code:
+   ```
+   <div class="thumbnail">
+            <img src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="...">
+   ```
    - Image:
    ![img_thumbnail](https://github.com/pfrivas/Mission-to-Mars/blob/main/Resources/Hemisphere%20as%20Thumbnails.png)
