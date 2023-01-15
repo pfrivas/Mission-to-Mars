@@ -18,7 +18,7 @@
 ### The Mongo database is updated to contain the full-resolution image URL and title for each hemisphere image
 - 
 ### The index.html file contains code that will display the full-resolution image URL and title for each hemisphere image
-= The code can be found in the [index.html](https://github.com/pfrivas/Mission-to-Mars/blob/main/templates/index.html) file
+- The code can be found in the [index.html](https://github.com/pfrivas/Mission-to-Mars/blob/main/templates/index.html) file
 ### After the scraping has been completed, the web app contains all the information from this module and the full-resolution images and titles for the four hemisphere images
 - 
 
