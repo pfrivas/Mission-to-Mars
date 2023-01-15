@@ -52,6 +52,15 @@ hemisphere_image_urls.append(hemispheres)
 ![mobile_img](https://github.com/pfrivas/Mission-to-Mars/blob/main/Resources/Flask%20Web%20App%20(Mobile).png)
 ### Two additional Bootstrap 3 components are used to style the webpage
 - 1. Styled the Web Scrape Button
+   - Code:
+   ```
+        <!-- Add a button to activate scraping script -->
+        <p><a class="btn btn-primary btn-lg" href="/scrape"
+          role="button" style="background-color: rgb(0, 253, 203); border: none; color: rgb(195, 65, 0);">Scrape New Data
+      </a></p>
+   ```
+   - Image:
+   ![img_styled_button](https://github.com/pfrivas/Mission-to-Mars/blob/main/Resources/Styled%20Button.png)
 - 2. Added the hemisphere images as thumbnails
    - Code:
    ```
