@@ -4,7 +4,7 @@
 ### Purpose
 The purpose of this data analysis is to automate a web browser to visit different websites to extract data about the Mission to Mars. The data was then stored in a NoSQL database, and then rendered the data into a web application created with Flask. The completed work is then displayed in a portfolio.
 
-The data analysis was done through 
+**The data analysis was done through**
 - Gaining familiarity with and use HTML elements, as well as class and id attributes, to identify content for web scraping. 
 - Using BeautifulSoup and Splinter to automate a web browser and perform a web scrape.
 - Creating a MongoDB database to store data from the web scrape, a web application with Flask to display the data from the web scrape and an HTML/CSS portfolio to showcase projects.
