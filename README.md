@@ -74,7 +74,27 @@ def mars_hemispheres(browser):
 - ![mongo_img](https://github.com/pfrivas/Mission-to-Mars/blob/main/Resources/MongoDB%20Code%20(Hemisphere%20Images).png)
 
 ### The index.html file contains code that will display the full-resolution image URL and title for each hemisphere image
-- The code can be found in the [index.html](https://github.com/pfrivas/Mission-to-Mars/blob/main/templates/index.html) file
+- The full code can be found in the [index.html](https://github.com/pfrivas/Mission-to-Mars/blob/main/templates/index.html) file
+```
+<!-- Section for Mars Hemispheres -->
+      
+      <div class="row" id="mars-hemispheres">
+        <div class="page-header">
+          <h2 class="text-center">Mars Hemispheres</h2>
+        </div>
+
+        {% for hemisphere in mars.hemispheres %}
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="...">
+            <div class="caption">
+              <h3>{{hemisphere.title}}</h3>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+```
 
 ### After the scraping has been completed, the web app contains all the information from this module and the full-resolution images and titles for the four hemisphere images
 ![web_app_img1](https://github.com/pfrivas/Mission-to-Mars/blob/main/Resources/HTML%20Flask%20Web%20App.1.png)
