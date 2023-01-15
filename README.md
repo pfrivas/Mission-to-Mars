@@ -51,5 +51,8 @@ hemisphere_image_urls.append(hemispheres)
 ### The webpage is mobile-responsive
 ![mobile_img](https://github.com/pfrivas/Mission-to-Mars/blob/main/Resources/Flask%20Web%20App%20(Mobile).png)
 ### Two additional Bootstrap 3 components are used to style the webpage
-- 1. 
-- 2.
+- 1. Styled the Web Scrape Button
+- 2. Added the hemisphere images as thumbnails
+   - Code:
+   - Image:
+   ![img_thumbnail](https://github.com/pfrivas/Mission-to-Mars/blob/main/Resources/Hemisphere%20as%20Thumbnails.png)
