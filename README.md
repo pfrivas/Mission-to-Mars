@@ -49,7 +49,7 @@ hemisphere_image_urls.append(hemispheres)
 
 ## Deliverable 3: Add Bootstrap 3 Components
 ### The webpage is mobile-responsive
-- 
+- ![mobile_img](https://github.com/pfrivas/Mission-to-Mars/blob/main/Resources/Flask%20Web%20App%20(Mobile).png)
 ### Two additional Bootstrap 3 components are used to style the webpage
 - 1. 
 - 2.
